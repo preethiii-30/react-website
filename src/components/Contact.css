@@ -1,0 +1,133 @@
+.contact{
+    max-width: 1300px;
+    margin: 50px auto;
+    
+}
+.contact__up{
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.contact__up-left h1{
+    text-align: left;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+.contact__up-left h1 button{
+    margin-top: 40px;
+    border: 2px solid #5A54F2 ;
+    border-radius: 4px;
+    background: #5A54F2;
+    color: white;
+    padding: 10px 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact__up-left h1 button:hover{
+    background-color: #3c8f92;
+    border: 2px solid #3c8f92 ;
+    font-weight: bold;
+}
+.contact__up-right{
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+}
+.contact__up-right .selfie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact__down{
+    padding-top: 200px;
+}
+.contact__down h3{
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #0C1930;
+}
+.contact__down h1{
+    border: 8px solid red;
+    margin-top: 20px;
+
+}
+.contact__down img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+@media (max-width:768px){
+    .contact{
+        align-items: center;
+       margin-top: 0;
+       padding: 5rem;
+    }
+    .contact__up{
+        margin-bottom: 100px;
+    }
+    .contact__up-left h1{
+        margin-top:50px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .contact__up-right img{
+        align-items: center;
+        padding-top: 0px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    .contact__down{
+        padding-top: 50px;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+    .contact{
+        padding: 1rem;
+    }
+    .contact__up{
+        gap: 10px;
+        padding: 10px;
+    }
+    .contact__up-left h1{
+        margin-top: 30px;
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .contact__up-left h1 button{
+        margin-top: 20px;
+        border: 2px solid #5A54F2 ;
+        border-radius: 4px;
+        background: #5A54F2;
+        color: white;
+        padding: 10px 50px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .contact__up-right img{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+  
+    .contact__down h3{
+        font-size: 20px;
+    }
+   
+}
